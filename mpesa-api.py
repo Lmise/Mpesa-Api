@@ -40,15 +40,16 @@ request = {
       "PartyA": "254799989486",
       "PartyB": "601754",
       "PhoneNumber": "254799989486",
-      "CallBackURL": "https://ip_address:port/callback",
+      "CallBackURL": "https://kraftycoder.ml/callback.html",
       "AccountReference": "account",
       "TransactionDesc": "test"
 }
+
 response = requests.post(api_url, json = request, headers=headers)
+
 print(response.text)
 
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
-
 
